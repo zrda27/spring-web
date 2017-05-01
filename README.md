@@ -1,2 +1,2 @@
 # spring-web
-web, spring
+web, spring, boot
