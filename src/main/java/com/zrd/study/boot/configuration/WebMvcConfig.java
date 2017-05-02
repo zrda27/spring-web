@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplicat
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,6 +14,7 @@ import com.zrd.study.boot.servlet.DemoServlet;
 
 @Configuration
 @ConditionalOnWebApplication
+@EnableCaching  //开启缓存
 public class WebMvcConfig {
 	@Bean
 	public ServletRegistrationBean demoServlet(){
